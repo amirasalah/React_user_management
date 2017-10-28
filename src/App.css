@@ -1,0 +1,139 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background: rgba(236, 236, 237, 0.968);
+  padding: 0;
+  margin: 0;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+Header {
+  background: #ffffff;
+  border-bottom: 2px solid #528AEF;
+}
+
+Header ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+Header ul li {
+  padding: 1rem 2rem;
+}
+
+Header ul li a {
+  text-decoration: none;
+  color: #528AEF;
+  text-transform: capitalize;
+}
+
+.component-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.component-container--home {
+  height: calc(100vh - 55px);
+}
+
+.app-header {
+  color: #8A8586;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-container--spacebetween {
+  justify-content: space-between
+}
+
+.flex-container--top--bottom {
+  flex-direction: column;
+}
+
+.search-input--big {
+  width: 95%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.search-input--small {
+  height: 25px;
+  font-size: 1rem;
+}
+
+.search-input {
+  background: transparent;
+  border-bottom: 2px solid #528AEF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-transform: capitalize;
+}
+
+.app-card {
+  background: #ffffff;
+  list-style-type: none;
+  padding: 1rem;
+  flex-basis: 25%;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.add-card {
+  margin-top: 5rem;
+  border-top: 2px solid #528AEF;
+}
+
+.btn-submit {
+  background-color: #528AEF;
+  border: none;
+  border-radius: 0;
+  height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.button-reset {
+  background: transparent;
+  border: none;
+}
+
+.btn-del {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 768px) {
+    Header ul {
+        flex-direction: column;
+        text-align: center
+    }
+    .app-card
+    {
+        flex-basis: 100%;
+    }
+}
